@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/large_margin_between_elements"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/these_are_your_monthly_statistics"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/extra_inner_margin"
+        app:columnCount="2"
+        app:orientation="horizontal"
+        app:rowCount="4">
+
+        <TextView
+            android:id="@+id/hours_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="36sp"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            tools:text="@string/zero" />
+
+
+        <TextView
+            android:id="@+id/sessions_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="36sp"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            tools:text="@string/zero" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:gravity="center"
+            android:text="@string/hours"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:gravity="center"
+            android:text="@string/sessions"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill" />
+
+        <TextView
+            android:id="@+id/points_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/regular_margin"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="36sp"
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            tools:text="@string/zero" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:gravity="center"
+            android:text="@string/points"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill" />
+
+
+    </android.support.v7.widget.GridLayout>
+
+
+    <lecho.lib.hellocharts.view.LineChartView
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+</LinearLayout>

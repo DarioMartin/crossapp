@@ -1,0 +1,8 @@
+<resources>
+    <string name="dumbbell">Dumbbell</string>
+    <string name="kettlebell">Kettlebell</string>
+    <string name="barbell">Barbell</string>
+    <string name="box">Box</string>
+    <string name="none">None</string>
+    <string name="high_bar">High bar</string>
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="dumbbell">Mancuerna</string>
+    <string name="kettlebell">Kettlebell</string>
+    <string name="barbell">Barra con peso</string>
+    <string name="box">Cajón</string>
+    <string name="none">Ninguno</string>
+    <string name="high_bar">Barra de dominadas</string>
+</resources>

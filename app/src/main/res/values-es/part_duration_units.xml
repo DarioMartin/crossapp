@@ -1,0 +1,17 @@
+<resources>
+    <string name="progression_21_15_9">21-15-9</string>
+    <string name="progression_21_15_9_representation">21-15-9</string>
+    <string name="progression_21_15_9_training">21-15-9</string>
+    <string name="rounds_for_time_training">vuelta %1$d de %2$d</string>
+    <string name="rounds_for_time_representation">%1$s vueltas</string>
+    <string name="rounds_for_time">vueltas</string>
+    <string name="in_minutes_training">%1$s minutos</string>
+    <string name="in_minutes_representation">%1$s minutos</string>
+    <string name="in_minutes">minutos</string>
+    <string name="countdown_training">cuenta atrás desde %1$d</string>
+    <string name="countdown_representation">de %1$s a %2$s</string>
+    <string name="countdown">cuenta atrás</string>
+    <string name="count_training">cuenta hasta %1$d</string>
+    <string name="count_representation">de %1$s a %2$s</string>
+    <string name="count">cuenta</string>
+</resources>

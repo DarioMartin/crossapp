@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/medium_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/description_title"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/body_text_size"/>
+
+
+        <com.ms.square.android.expandabletextview.ExpandableTextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/expand_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            expandableTextView:maxCollapsedLines="4"
+            expandableTextView:animDuration="200">
+
+            <TextView
+                android:id="@id/expandable_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_margin"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/white"
+                android:textSize="@dimen/body_text_size"
+                tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."/>
+
+            <ImageButton
+                android:id="@id/expand_collapse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/medium_margin"
+                android:layout_gravity="end|bottom"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/expand_and_collapse_text_icon"/>
+
+        </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+        <LinearLayout
+            android:id="@+id/video_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/video_title"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/body_text_size"/>
+
+            <fragment
+                android:id="@+id/youtube_fragment"
+                android:name="com.google.android.youtube.player.YouTubePlayerSupportFragment"
+                class="com.google.android.youtube.player.YouTubePlayerSupportFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_margin"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/equipment_needed_title"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/body_text_size"/>
+
+        <GridLayout
+            android:id="@+id/material_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_margin"
+            android:columnCount="3"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/muscles_involved_title"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/body_text_size"/>
+
+        <GridLayout
+            android:id="@+id/muscles_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_margin"
+            android:columnCount="3"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="@dimen/large_margin_between_elements"
+            android:layout_marginTop="@dimen/large_margin_between_elements"
+            android:background="@color/colorAccent"/>
+
+        <ImageView
+            android:id="@+id/exercise_type_icon"
+            android:layout_width="@dimen/exercise_type_icon_size"
+            android:layout_height="@dimen/exercise_type_icon_size"
+            android:layout_gravity="center"
+            tools:src="@drawable/ic_type_resistance"
+            android:contentDescription="@string/exercise_type_image"/>
+
+        <TextView
+            android:id="@+id/exercise_type_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/regular_margin"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_title_text_size"
+            tools:text="Resistance"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

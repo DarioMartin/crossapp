@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">CrossApp</string>
+    <string name="title_exercises">Exercises</string>
+    <string name="title_wods">Workouts</string>
+    <string name="title_statistics">Statistics</string>
+    <string name="equipment_needed_title">Equipment needed</string>
+    <string name="description_title">Description</string>
+    <string name="muscles_involved_title">Muscles involved</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- General -->
+    <string name="workout_delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="workout_edit">Edit</string>
+    <string name="create">Create</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="auth_failed">Auth failed</string>
+
+    <!-- Workout details -->
+    <string name="workout_delete_confirmation_message">Do you really want to delete this workout?</string>
+    <string name="workout_delete_confirmation_title">Delete workout</string>
+
+
+    <string name="start_training">Start training</string>
+    <string name="add_new_part">Add new part</string>
+    <string name="tap_to_skip_part">Tap the screen to skip this part</string>
+    <string name="create_exercise">Add exercise</string>
+    <string name="exercise_type_title">Exercise type</string>
+    <string name="go_to_profile">Go to profile</string>
+    <string name="all_types">All</string>
+    <string name="search_title">Search</string>
+    <string name="search_hint">Search exercise</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_search">Search</string>
+    <string name="select_one">Select one</string>
+    <string name="monkey_bars">Monkey bars</string>
+    <string name="no_exercises_title">There is no exercises to show</string>
+    <string name="no_exercises_subtitle">Try to change the search filters or try it again later.</string>
+    <string name="error_player">Player error</string>
+    <string name="video_title">Video</string>
+    <string name="widget_error_empty">Start a training session</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="new_workout_dialog_title">New workout name</string>
+    <string name="invalid_workout_name">Invalid workout name</string>
+    <string name="loading_exercises_title">Loading exercises...</string>
+    <string name="loading_exercises_subtitle">Wait until we load the exercises for you.</string>
+    <string name="empty_workout_title">Empty workout</string>
+    <string name="loading_workouts_title">Loading workouts...</string>
+    <string name="loading_workouts_subtitle">Wait until your workouts are completly loaded.</string>
+    <string name="create_a_new_part_title">Create a new part</string>
+    <string name="add_part_name_hint">Choose a name for this part</string>
+    <string name="add_part_duration_hint">Set the duration for this part</string>
+    <string name="accept">Accept</string>
+    <string name="title_admin">Admin</string>
+    <string name="exercise_name">Exercise name</string>
+    <string name="exercise_description">Description</string>
+    <string name="empty_workout_subtitle">Start adding some exercises to your workout.</string>
+    <string name="add_new_exercise">Add a new exercise</string>
+    <string name="incomplete_parts_error">Add at least one exercise to each part before saving.</string>
+    <string name="ok">Ok</string>
+    <string name="exercise_intensity_hint">Set the intensity for this exercise</string>
+    <string name="select_a_workout">Select a workout:</string>
+    <string name="select_a_parts">Select the parts where you want to add this exercise</string>
+    <string name="add">Add</string>
+    <string name="reps">Reps.</string>
+    <string name="part_time_ended_title">Part completed</string>
+    <string name="part_time_ended_message">You have completed this part. Let\'s continue.</string>
+    <string name="workout_ended_title">Workout completed</string>
+    <string name="workout_ended_message">You have completed the workout. Let\'s see some statistics.</string>
+    <string name="how_good_was_your_training">How good was your training?</string>
+    <string name="attention">Attention</string>
+    <string name="no_done_yet">Not done yet</string>
+    <string name="these_are_your_monthly_statistics">These are your monthly statistics</string>
+    <string name="hours">hours</string>
+    <string name="sessions">sessions</string>
+    <string name="points">points</string>
+    <string name="zero">0</string>
+    <string name="logout">Logout</string>
+    <string name="one">1</string>
+    <string name="login_back_drop_image">Login back drop image</string>
+    <string name="app_icon">App icon</string>
+    <string name="clock_start">Clock start</string>
+    <string name="clock_pause">Clock pause</string>
+    <string name="muscle_image">Muscle image</string>
+    <string name="exercise_image">Exercise image</string>
+    <string name="exercise_backdrop">Exercise backdrop</string>
+    <string name="equipment_image">Equipment image</string>
+    <string name="add_icon">Add icon</string>
+    <string name="expand_and_collapse_text_icon">Expand and collapse text icon</string>
+    <string name="exercise_type_image">Exercise type image</string>
+    <string name="workout_image">Workout image</string>
+    <string name="initial_time">00:00:00</string>
+    <string name="_1">1</string>
+    <string name="name">Name</string>
+    <string name="tap_the_screen_after_every_exercise">Tap the screen after every exercise</string>
+    <string name="create_new_workout">Create new workout</string>
+
+
+</resources>

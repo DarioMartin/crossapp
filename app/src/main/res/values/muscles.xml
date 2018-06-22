@@ -1,0 +1,15 @@
+<resources>
+    <string name="shoulders">Shoulders</string>
+    <string name="biceps">Biceps</string>
+    <string name="triceps">Triceps</string>
+    <string name="lumbars">Lumbars</string>
+    <string name="abs">ABS</string>
+    <string name="glutes">Glutes</string>
+    <string name="hamstrings">Hamstrings</string>
+    <string name="quadriceps">Quadriceps</string>
+    <string name="calves">Calves</string>
+    <string name="full_body">Full body</string>
+    <string name="trapezius">Trapezius</string>
+    <string name="dorsal">Dorsal</string>
+    <string name="chest">Chest</string>
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/regular_margin"
+    tools:background="@color/appBackground">
+
+    <TextView
+        android:id="@+id/part_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/regular_margin"
+        android:layout_marginLeft="@dimen/regular_margin"
+        android:layout_marginStart="@dimen/regular_margin"
+        android:layout_marginTop="@dimen/regular_margin"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Warming up" />
+
+    <LinearLayout
+        android:id="@+id/part_exercise_list"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/regular_margin"
+        android:layout_marginLeft="@dimen/regular_margin"
+        android:layout_marginRight="@dimen/regular_margin"
+        android:layout_marginStart="@dimen/regular_margin"
+        android:layout_marginTop="@dimen/regular_margin"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="@+id/part_name"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/part_name" />
+
+
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/regular_margin"
+        android:layout_marginRight="@dimen/regular_margin"
+        android:layout_marginTop="@dimen/regular_margin"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="3 rounds" />
+
+    <LinearLayout
+        android:id="@+id/add_new_exercise"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/add_exercise_button_height"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:layout_marginEnd="@dimen/regular_margin"
+        android:layout_marginLeft="@dimen/regular_margin"
+        android:layout_marginRight="@dimen/regular_margin"
+        android:layout_marginStart="@dimen/regular_margin"
+        android:layout_marginTop="@dimen/regular_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="@+id/part_name"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/part_exercise_list">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/add_icon_size"
+            android:layout_height="@dimen/add_icon_size"
+            android:padding="@dimen/micro_margin"
+            android:tint="@color/subtitle"
+            app:srcCompat="@drawable/ic_add_button"
+            android:contentDescription="@string/add_icon"
+            android:layout_marginStart="@dimen/medium_margin"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/regular_margin"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/add_new_exercise"
+            android:textColor="@color/subtitle"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

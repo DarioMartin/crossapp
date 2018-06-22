@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_admin">Admin</string>
+    <string name="exercise_name">Nombre del ejercicio</string>
+    <string name="exercise_description">Descripción</string>
+</resources>

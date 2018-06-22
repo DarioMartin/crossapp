@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ms_arrow_tint="@color/colorAccent"
+            app:ms_background_color="@color/colorPrimaryDark"
+            app:ms_text_color="@color/white"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list"
+            android:name="com.dariomartin.crossapp.view.fragments.ItemFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            tools:listitem="@layout/exercise_list_item"
+            tools:context="com.dariomartin.crossapp.view.fragments.ExercisesListFragment"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/message_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/extra_inner_margin"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/regular_margin"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="@string/loading_exercises_title"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/medium_margin"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="@string/loading_exercises_subtitle"
+            android:textColor="@color/subtitle"
+            android:textSize="16sp"/>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

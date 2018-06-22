@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/exercise_item_height"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingEnd="@dimen/medium_margin"
+    android:paddingStart="@dimen/medium_margin"
+    android:background="?attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/small_icon_size"
+        android:layout_height="wrap_content"
+        tools:src="@drawable/ic_type_resistance"
+        android:contentDescription="@string/exercise_type_image"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/extra_inner_margin"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_title_text_size"
+            tools:text="Push-ups" />
+
+        <TextView
+            android:id="@+id/muscles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="@color/subtitle"
+            android:textSize="@dimen/subtitle_text_size"
+            android:lines="1"
+            android:ellipsize="end"
+            tools:text="Pecho, biceps" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/add_exercise_button"
+        android:layout_width="@dimen/small_icon_size"
+        android:layout_height="@dimen/small_icon_size"
+        android:layout_marginStart="@dimen/medium_margin"
+        android:tint="@color/colorAccent"
+        app:srcCompat="@drawable/ic_add_button"
+        android:contentDescription="@string/add_icon"/>
+</LinearLayout>

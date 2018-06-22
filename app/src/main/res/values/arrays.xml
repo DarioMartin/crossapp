@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer-array name="workout_backgrounds">
+        <item>@drawable/workout_bg_1</item>
+        <item>@drawable/workout_bg_2</item>
+        <item>@drawable/workout_bg_3</item>
+        <item>@drawable/workout_bg_4</item>
+    </integer-array>
+
+</resources>

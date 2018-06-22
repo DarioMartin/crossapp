@@ -1,0 +1,14 @@
+{
+  "exercises": [
+    {
+      "id": 1,
+      "name": "Push-up",
+      "description": "La la la",
+      "muscles": ["BICEPS"],
+      "material": ["NONE"],
+      "video_url": "",
+      "images": [],
+      "type": 1
+    }
+  ]
+}

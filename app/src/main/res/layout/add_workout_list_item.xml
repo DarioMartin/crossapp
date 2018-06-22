@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/create_workout_button_height"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="@color/appBackground"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/add_exercise_button"
+        android:layout_width="@dimen/title_size"
+        android:layout_height="@dimen/title_size"
+        android:tint="@color/subtitle"
+        app:srcCompat="@drawable/ic_add_button"
+        android:contentDescription="@string/add_icon"
+        android:layout_marginEnd="@dimen/medium_margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/create_new_workout"
+        android:textColor="@color/subtitle"
+        android:textSize="@dimen/title_size" />
+
+</LinearLayout>

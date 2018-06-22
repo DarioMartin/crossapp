@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_clock_text_size">74sp</dimen>
+    <dimen name="play_icon_size">76dp</dimen>
+</resources>

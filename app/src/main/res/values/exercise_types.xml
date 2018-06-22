@@ -1,0 +1,5 @@
+<resources>
+    <string name="resistance">Resistance</string>
+    <string name="strength">Strength</string>
+    <string name="other">Other</string>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/exercise_detail_header_size">
+
+            <ImageView
+                android:id="@+id/exercise_backdrop"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/exercise_detail_header_size"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/exercise_bg"
+                app:layout_collapseMode="parallax"
+                android:contentDescription="@string/exercise_backdrop"/>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/media_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/exercise_detail_header_size"
+                app:layout_collapseMode="parallax" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/exercise_detail_header_size"
+                android:background="@drawable/gradient" />
+
+            <TextView
+                android:id="@+id/exercise_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/medium_margin"
+                android:fontFamily="sans-serif-regular"
+                android:lines="1"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                tools:text="Exercise name" />
+
+        </RelativeLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/add_exercise_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/medium_margin"
+            android:layout_marginTop="-24dp"
+            android:tint="@color/colorPrimary"
+            app:srcCompat="@drawable/ic_add_button" />
+
+        <include layout="@layout/fragment_exercise_detail_body" />
+    </LinearLayout>
+
+</ScrollView>

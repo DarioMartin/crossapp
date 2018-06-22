@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             tools:background="@color/appBackground">
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/reps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="2"
+            android:gravity="end"
+            android:lines="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/training_exercise_text_size"
+            tools:text="10"/>
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/training_exercise_text_size"
+            tools:text="Dead lift"
+            android:layout_marginEnd="@dimen/regular_margin"
+            android:layout_marginStart="@dimen/regular_margin"/>
+
+        <TextView
+            android:id="@+id/intensity_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="2"
+            android:gravity="end"
+            android:lines="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/training_exercise_text_size"
+            tools:text="40"/>
+
+        <TextView
+            android:id="@+id/intensity_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="2"
+            android:lines="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/training_exercise_text_size"
+            tools:text="Kg"
+            android:layout_marginStart="@dimen/regular_margin"/>
+
+    </TableRow>
+
+</TableLayout>

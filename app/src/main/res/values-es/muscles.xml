@@ -1,0 +1,15 @@
+<resources>
+    <string name="shoulders">Hombros</string>
+    <string name="biceps">Bíceps</string>
+    <string name="triceps">Tríceps</string>
+    <string name="lumbars">Lumbares</string>
+    <string name="abs">Abdominales</string>
+    <string name="glutes">Glúteos</string>
+    <string name="hamstrings">Isquiotibiales</string>
+    <string name="quadriceps">Cuádriceps</string>
+    <string name="calves">Gemelos</string>
+    <string name="full_body">Todo el cuerpo</string>
+    <string name="trapezius">Trapecio</string>
+    <string name="dorsal">Dorsal</string>
+    <string name="chest">Pecho</string>
+</resources>
